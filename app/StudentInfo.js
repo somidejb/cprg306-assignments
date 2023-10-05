@@ -1,17 +1,13 @@
 import Link from 'next/link';
 import React from 'react'
 
-const StudentInfo = () => {
-    const name = 'Jubril Somide';
-    const courseSection = 'CPRG 306 A';
-    const githubRepo = 'https://github.com/somidejb/cprg306-assignments';
-
+const StudentInfo = (props) => {
     return(
         <div>
-            <h1>Jubril's Student Information</h1>
-            <p>Name: {name}</p>
-            <p>Course Section: {courseSection}</p>
-            <p>GitHub Repository: {' '}<Link href={githubRepo}>github Repository</Link></p>
+            <h1 className='italic hover:not-italic text-blue-400'>Student Information</h1>
+            <p>Name: {props.name}</p>
+            <p>Course Section: {props.courseSection}</p>
+            <p>GitHub Repository: {' '}<Link href={props.githubRepo}><span className='cursor-pointer'>github Repository</span></Link></p>
         </div>
     )
 }
