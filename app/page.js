@@ -30,6 +30,9 @@ export default function Home() {
           <li>
             <Link href = '\week8'>Week 8</Link>
           </li>
+          <li>
+            <Link href = '\week9'>Week 9</Link>
+          </li>
         </ul>
       </div>
   
